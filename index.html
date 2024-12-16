@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Flipkart</title>
 </head>
 
@@ -17,54 +17,62 @@
                 <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
                     width="160" height="40" title="Flipkart">
             </div>
-
+    
             <div id="nav-search">
                 <button id="nav-search-btn" type="submit">
-                    <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title>Search Icon</title>
-                        <path
-                            d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                        <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
                             stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
+                        <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </button>
-                <input id="nav-input" type="text" placeholder="Search For Products,Brands and More">
+                <input id="nav-input" type="text" placeholder="Search For Products, Brands and More">
             </div>
+    
             <div id="nav-items">
-                <div style="height: 44px;">
+                <div id="nav-login" style="height: 44px;">
                     <button class="nav-login-btn">
-                        <img style="padding-right: 10px;"
-                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
-                            alt="Login" class="-dOa_b L_FVxe" width="24" height="24">
-                            <span>Login</span>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+                            alt="Login" width="24" height="24">
+                        <span>Login</span>
                     </button>
+    
+                    <div id="nav-login-dropdown">
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
+    
                 <div>
                     <button class="nav-login-btn">
                         <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-                            alt="Cart" class="_1XmrCc" width="24" height="24">
+                            alt="Cart" width="24" height="24">
                         <span>Cart</span>
                     </button>
                 </div>
                 <div>
                     <button class="nav-login-btn">
                         <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                            alt="Become a Seller" class="_1XmrCc">
-                        <span  id="nav-seller">Become a Seller</span>
+                            alt="Become a Seller">
+                        <span id="nav-seller">Become a Seller</span>
                     </button>
                 </div>
                 <div>
                     <button class="nav-login-btn">
-                        <img class="-dOa_b"
-                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
                             width="24" height="24" alt="Dropdown with more help links">
                     </button>
                 </div>
             </div>
         </nav>
     </header>
+    
+
 
 
 
