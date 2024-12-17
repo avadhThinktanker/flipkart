@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; 
+    padding: 0 30px; 
 }
 
 #nav-logo {
@@ -45,7 +45,7 @@ nav {
 
 #nav-input {
     border: none;
-    height: 40px;
+    height: 30px;
     width: 100%;
     background-color: transparent;
     outline: none;
@@ -73,15 +73,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 10px;
+    padding: 5px 8px;
     cursor: pointer;
     height: 40px;
     transition: background-color 0.3s ease;
 }
 
-.nav-login-btn:hover {
-    background-color: #f5f5f5;
-    color: blue;
+#nav-login:hover {
+    background-color: #3f2afa;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
 }
 
 #nav-seller {
@@ -138,4 +140,100 @@ nav {
 #nav-login-dropdown ul li a:hover {
     background-color: #f1f1f1;
     color: blue;
+    
+}
+#nav-login-dropdown-arrow {
+    padding-left: 4px;
+    width: 100%;
+}
+
+#nav-login-dropdown-arrow img {
+    transition:  1s ease-in    ;
+}
+
+#nav-login :hover #nav-login-dropdown-arrow{
+    transform: rotateX(180deg);
+}
+#category-List{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: auto;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+}
+
+#img-slider{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    padding-top: 10px;
+}
+#img-slides{
+    width: 100%;
+    position: absolute;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#electronics-section{
+    margin-top: 10px;
+    padding: 10px 0px;
+    width: 80%;
+    height: 300px;
+    /* background-color: #fff; */
+    position: relative;
+}
+
+#electronics-items{
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 8px;
+}
+.ele-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    border : 1px solid rgb(206, 204, 204);
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+
+.ele-items img{
+    object-fit: contain;
+}
+#img{
+    /* float: right; */
+    position: absolute;
+    right: 50px;
+    top: 500px   ;
+}
+
+#electronic{
+    display: flex;
+}
+#ad-image{
+    padding: 10px ;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
 }
