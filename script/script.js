@@ -49,7 +49,7 @@ const electronicsItems = [
         id :1,
         name : 'Printers',
         price  : "From 2999",
-        img : "https://rukminim1.flixcart.com/image/210/210/xif0q/printer/q/x/f/pixma-e3370-canon-original-imah2f2ygbnqzkrz.jpeg?q=80"
+        img : 'https://rukminim2.flixcart.com/image/210/210/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=80'
     },
     {
         id :2,
@@ -79,7 +79,7 @@ const electronicsItems = [
         id :6,
         price  : "From 9999",
         name : 'Sony TV',
-        img : "https://rukminim1.flixcart.com/image/210/210/xif0q/monitor/z/l/6/-original-imagze3c9aggznc9.jpeg?q=80"
+        img : 'https://rukminim2.flixcart.com/image/210/210/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=80'
     },
     {
         id :7,
@@ -95,10 +95,62 @@ const electronicsItems = [
     },
 ]
 
+const othersItems = [
+    {
+        id :1,
+        name : 'Coffe Powder',
+        price  : "Upto 80% off",
+        img : "https://rukminim2.flixcart.com/image/210/210/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
+    },
+    {
+        id :2,
+        name : 'Remote control Toys',
+        price  : "Upto 80% off",
+        img : "https://rukminim2.flixcart.com/image/210/210/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=80"
+    },
+    {
+        id :3,
+        name : 'Toys',
+        price  : "Upto 70% off",
+        img : "https://rukminim2.flixcart.com/image/210/210/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=80"
+    },
+    {
+        id :4,
+        name : 'Gym tool',
+        price  : "upto 50% off",
+        img : "https://rukminim2.flixcart.com/image/210/210/kdbzqfk0/bar/8/h/q/push-up-bar-0-8-long-ankaro-original-imafu9dmvdk3rzvy.jpeg?q=80"
+    },
+    {
+        id :5,
+        name : 'insruments',
+        price  : "From 1999",
+        img : "https://rukminim2.flixcart.com/image/210/210/acoustic-guitar/e/y/y/dd-380c-blk-jixing-original-imaeff94e9tczafp.jpeg?q=80"
+    },
+    {
+        id :6,
+        price  : "Upto 60% off",
+        name : 'Yoga Mat',
+        img : 'https://rukminim2.flixcart.com/image/210/210/l51d30w0/shopsy-sport-mat/p/w/s/anadi-01-yoga-mat-4-30-anadi-enterprise-15-original-imagfsxudxcm7r48.jpeg?q=80'
+    },
+    {
+        id :7,
+        name : 'Musical Toy',
+        price  : "From 999",
+        img : "https://rukminim2.flixcart.com/image/210/210/kiqbma80-0/musical-toy/s/k/b/xylophone-guitar-wooden-kids-first-musical-sound-instrument-toy-original-imafyfszcjkjcwwz.jpeg?q=80"
+    },
+    {
+        id :8,
+        name : 'Printers',
+        price  : "From 999",
+        img : "https://rukminim1.flixcart.com/image/210/210/xif0q/printer/q/x/f/pixma-e3370-canon-original-imah2f2ygbnqzkrz.jpeg?q=80"
+    },
+]
+
 categoryList.map((item) => {
     const category = document.getElementById('category-List');
 
     const categoryItem = document.createElement('div');
+    // categoryItem.className.add('category-item')
 
     categoryItem.innerHTML = `
       <img src="${item.img}" alt="${item.name}" />
@@ -106,16 +158,38 @@ categoryList.map((item) => {
 
     category.appendChild(categoryItem);
 });
+
+
 electronicsItems.map((item) => {
     const electronicsItems = document.getElementById('electronics-items');
     
     const divElement = document.createElement('div');
-    divElement.classList.add('ele-items')
+    divElement.classList.add('ele-items');
     
-    divElement.innerHTML = `<div classname="elect-items" ><img src="${item.img}"  width='170' height="180"  alt="${item.name}" /> </div>
-    <div >${item.name}</div>
-    <div>${item.price}</div>`;
- 
+    divElement.innerHTML = `
+        <div class = 'ele-item-image'>
+            <img src="${item.img}" width="150" height="180" alt="${item.name}" />
+        </div>
+        <div>${item.name}</div>
+        <div>${item.price}</div>
+    `;
+    
     electronicsItems.appendChild(divElement);
- });
+});
+
  
+othersItems.map((item) => {
+    const beautyitems = document.getElementsByClassName("beautyitems")[0];
+    const newElement = document.createElement('div');
+    newElement.classList.add('ele-items');
+    
+    newElement.innerHTML = `<div>
+                               <img src="${item.img}" width='150' height="180" alt="${item.name}" />
+                            </div>
+                            <div>${item.name}</div>
+                            <div>${item.price}</div>`;
+ 
+    beautyitems.appendChild(newElement);
+});
+
+
