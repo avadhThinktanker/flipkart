@@ -301,13 +301,13 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    console.log('Prev button clicked');
+    // console.log('Prev button clicked');
     handleButtonClick('prev');
 });
 
 
 const containers = document.getElementById('container');
-console.log(containers)
+// console.log(containers)
 collections.map((collection) => {
     container.innerHTML += `
             <div class="maindiv">
