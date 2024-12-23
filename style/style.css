@@ -269,24 +269,6 @@ main {
   object-fit: cover;
 }
 
-@keyframes slide-animation {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-200%);
-  }
-  75% {
-    transform: translateX(-300%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .prev {
   left: 0px;
   border-radius: 0px 6px 6px 0px;
@@ -497,6 +479,24 @@ defer #ad-image img {
   z-index: 100;
   box-shadow: 9px 6px 16px -3px rgba(0, 0, 0, 0.36);
 }
+
+@keyframes slide-animation {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 @media screen and (max-width: 480px) {
   #img-slider {
