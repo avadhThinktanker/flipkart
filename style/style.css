@@ -210,51 +210,6 @@ nav {
   display: flex;
 }
 
-@media (min-width: 1440px) {
-  body {
-    /* width: 100%; */
-    max-width: 1440px;
-    height: auto;
-    margin: auto;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #nav-items {
-    display: none;
-  }
-  #nav-search {
-    display: none;
-  }
-  #nav-logo {
-    float: left;
-  }
-  .menu-btn {
-    display: block;
-    background-color: white;
-    cursor: pointer;
-  }
-  .menu-dropdown {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    border-top: 1px solid #ddd;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    z-index: 500;
-  }
-  .menu-btn.active + .menu-dropdown {
-    display: flex;
-  }
-  #container {
-    flex-wrap: wrap;
-  }
-}
-
 #category-List {
   /* width: 100%; */
   display: flex;
@@ -276,12 +231,6 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
-}
-
-@media (max-width: 1256px) {
-  #category-List {
-    overflow-x: auto;
-  }
 }
 
 main {
@@ -549,15 +498,6 @@ defer #ad-image img {
   box-shadow: 9px 6px 16px -3px rgba(0, 0, 0, 0.36);
 }
 
-@media screen and (max-width: 768px) {
-  #img-slider {
-    height: 200px;
-  }
-  #img-slides {
-    width: 300%;
-  }
-}
-
 @media screen and (max-width: 480px) {
   #img-slider {
     height: 150px;
@@ -567,5 +507,65 @@ defer #ad-image img {
   }
   .side img {
     object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img-slider {
+    height: 200px;
+  }
+  #img-slides {
+    width: 300%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav-items {
+    display: none;
+  }
+  #nav-search {
+    display: none;
+  }
+  #nav-logo {
+    float: left;
+  }
+  .menu-btn {
+    display: block;
+    background-color: white;
+    cursor: pointer;
+  }
+  .menu-dropdown {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+  }
+  .menu-btn.active + .menu-dropdown {
+    display: flex;
+  }
+  #container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    /* width: 100%; */
+    max-width: 1440px;
+    height: auto;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1256px) {
+  #category-List {
+    overflow-x: auto;
   }
 }
